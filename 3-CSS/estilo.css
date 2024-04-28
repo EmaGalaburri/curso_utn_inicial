@@ -1,0 +1,42 @@
+body{
+    background-color: pink;
+}
+
+.unTexto{
+    background-color: green;
+}
+
+button{
+    background-color: blue;
+}
+
+#tituloPrincipal{
+    background-color: red;
+    width: 280px; /* ancho del elemento */ 
+}
+
+#botonGris{
+    background-color: gray;
+}
+
+.bordeAzul{
+    border: blue 2px dotted;
+}
+
+.texto3{
+    width: 50%; /* ancho del 50%, ocupa la mitad del body/pantalla */
+}
+
+#textoUnico{
+    background-image: url(./Images/paisaje-e1549600034372.jpg);
+}
+
+ul{
+    width: 300px;
+    background-color: chocolate;
+}
+
+li{ /* items de la lista */
+    background-color: aquamarine;
+    width: 50%;
+}
