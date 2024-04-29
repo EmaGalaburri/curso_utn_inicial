@@ -1,0 +1,52 @@
+*{
+    margin: 0; /* para que saque los margenes q vienen x defecto */
+    box-sizing: border-box; /* para q el width y el height inclyan el borde(border) y el relleno(padding) que le agreguemos */
+    padding: 0; /* no suele ser usado, ya que no suele venir con padding x defecto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* tipografia */
+    /* Si traigo tipografia de Google Font, se pone en el head */
+}
+
+body{
+    background-color: lightcyan;
+}
+
+ul{
+    list-style-type: none; /* para sacar el punto de los items */
+    background-color: darkcyan;
+    padding: 10px;
+    width: 240px; /* 190px de ancho */
+}
+
+.item-menu{
+    display: inline; /* para que se dispongan en linea, uno al lado del otro */
+}
+
+h1{
+    background-image: url(./Images/peshitos.jpg);
+    background-size: cover; /* adapta la imagen para que entre sobre todo de alto */
+    background-attachment: fixed;
+    background-position: 50% 30px;
+    background-repeat: no-repeat;
+    padding: 80px 20px; /* 40px de relleno sup e inf - 20px a los costados */
+    margin: 40px 0px; /* 100 de margen con la etiq sup e inf*/
+    height: 600px; /* 25% de vista de pantalla de alto */
+    text-align: center; /* para centrar el titulo */
+    font-weight: 600;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-shadow: 5px 5px brown;
+}
+
+.tarjeta{
+    max-width: 400px;
+    border: 3px solid darkgreen;
+    margin: 50px auto;
+    box-shadow: 
+        5px 5px 10px blue, /* 5px horizontal - 5px vertical - 10px difuminado */
+        -5px -5px 10px violet;
+}
+
+.img-tarj{
+    width: 100%; /* toma el 100% del ancho de la tarjeta */
+    
+}
