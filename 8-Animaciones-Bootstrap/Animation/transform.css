@@ -1,0 +1,42 @@
+*{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+body{
+    background-color: lightblue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cubo{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border: 3px solid darkred;
+}
+
+.uno:hover{
+    transform: translate(20px,40px); /*nos permite trasladar el elemento -> 20px en el eje x y 40px en el eje y*/
+}
+
+.dos:active{
+    transform: scale(2); /*duplica su tamaño cuando lo mantengo pulsado*/
+}
+
+.tres:hover{
+    transform: rotate(-360deg); /*rota el elemento*/
+}
+
+.cuatro:active{
+    transform: skew(20deg);
+}

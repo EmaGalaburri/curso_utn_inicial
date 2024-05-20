@@ -1,0 +1,26 @@
+*{
+    font-size: 20px;
+}
+
+.padre{
+    background-color: lightblue;
+    height: 800px;
+    display: flex;
+    flex-direction: row; /* indica si los hijos se comportan como fila o columna */
+    justify-content: center; /* alinea de manera horizontal (si es row) o vertical (si es column) */
+    align-items: flex-start; /* alinea de manera vertical (si es row) u horizontal (si es column)*/
+    gap: 30px; /* agrega distancia entre los elementos */
+    padding: 10px 20px;
+    
+    /* Grid --> divide al padre en grillas */
+    /*display: grid;
+    grid-template-columns: 300px 300px 300px; /*estoy indicanto que quiero 3 columnas de 300px y x defecto al 4to elemento lo posiciona al lado en una nueva grilla*/
+}
+
+.hijos{
+    background-color: palevioletred;
+    border: 2px solid pink;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}

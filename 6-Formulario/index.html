@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Usando Formularios</h1>
+    <form action="" method="post">
+
+        <label for="nombreUsuario">Nombre
+            <input type="text" name="nombreUsuario" id="nombreUsuario" class="inputComp">
+        </label>
+
+        <label for="apellidoUsuario">Apellido
+            <input type="text" name="apellido" id="apellidoUsuario" class="inputComp">
+        </label>
+
+        <label for="emailUsuario">Email
+            <input type="email" name="email" id="emailUsuario" placeholder="ejemplo@ejemplo.com" class="inputComp">
+        </label>
+
+        <label for="turnoCursada">Ingrese turno que desee:</label>
+            <label for="tTarde">Tarde
+                <input type="radio" name="turno" value="tarde" id="tTarde">
+            </label>
+            <label for="tNoche">Noche
+                <input type="radio" name="turno" value="noche" id="tNoche">
+            </label>
+
+        <label for="cursosAInscribir">Seleccione a que curso quiere anotarse:</label>
+            <label for="PWI">Prog. Web. Inicial
+                <input type="checkbox" name="curso" id="PWI" value="PWI">
+            </label>
+            <label for="PWA">
+                Prog. Web. Avanzado
+                <input type="checkbox" name="curso" id="PWA" value="PWA">
+            </label>
+        
+        <label for="paisOrigen">Selecciona tu pais de origen
+            <select name="paisOrigen" id="paisOrigen">
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+        </label>
+        
+        <label for="fechaNac">Ingrese fecha de nacimiento</label>
+            <input type="date" name="fechaNac" id="fechaNac">
+        
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentariosUsuarios" id="comentarios"></textarea>
+        
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+</html>

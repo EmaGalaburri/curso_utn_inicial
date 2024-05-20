@@ -1,0 +1,98 @@
+body{
+    background-color: darkgoldenrod;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2; /*para ubicar el elemento en primer plano*/
+}
+
+.logo{
+    width: 200px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: darkgray;
+    text-align: center;
+}
+
+.sub-menu{
+    background-color: darkblue;
+}
+
+.tarjeta{
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+}
+
+section{
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-top: 8px 8px 0px 0px;
+}
+
+/* footer{
+    height: 400px;
+    background-color: antiquewhite;
+} */
+
+.logoBurger{
+    width: 100px;
+    position: relative;
+    bottom: -10px;
+    right: -100px;
+}
+
+.icono-fijo{
+    width: 100px;
+    background-color: darkred;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+/* Responsive Design -> siempre se pone abajo del todo en el CSS */
+
+@media(max-width:768px){
+    /* .menuHamb{      -> Para esconder la barra de navegacion cuando es menor de 768px
+        width: 100px;
+        display: block;
+    }
+    .menu{
+        display: none;
+    } */
+}
+
+@media(max-width:600px){ /*Para dispositivos menores a 600px*/
+
+    section{
+        grid-template-columns: 1fr;
+    }
+    menu{
+        flex-direction: column;
+    }
+}
